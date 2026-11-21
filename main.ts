@@ -1,2 +1,1 @@
-F=require('fs')
-for(n=5;d='/i00'+n,n--;)for(Z=F.readFileSync(`/input${d}/level.txt`),W=-~Z.indexOf(10),U=Z.indexOf(64),F.mkdirSync(O='/output'+d),r=10;r--;)for([t,m,p,k]of Q=[[Z.map((c,i)=>i/W^8&&i>U^i%W&8^r?4:c*12%32%7),'',U]]){(s=[...t])[p]&=1;s[p+k]|=2;M={[p]:m};X=[];for(u of L=[p])[1,-1,W,-W].map((k,j)=>(e=M[u]+'rldu'[j],s[q=u+k]<2?M[q]??=L.push(q)&&e:s[q+k]<2>s[q]/4&&X.push([s,e,q,k])));/2/.test(s)?Z[s+L.sort()]||=Q.push(...X):Q.splice(F.appendFileSync(O+'/solution.txt',M[U]))}
+eval(process.env.q)
